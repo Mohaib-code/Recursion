@@ -128,6 +128,47 @@ public class Basic_Recursion{
         int hor=tileProblem(n-2);
         return ver+hor;
     }
+    public static void duplicate(String str,int idx,StringBuilder newStr,boolean map[]){
+        //Base Case
+        if(idx == str.length()){
+            System.out.println(newStr);
+            return;
+        }
+        //kaam
+        char currChar=str.charAt(idx);
+        if(map[currChar-'a']==true){
+            //duplicate
+            duplicate(str, idx+1, newStr, map);
+        }
+        else{
+            map[currChar-'a']=true;
+            duplicate(str, idx+1, newStr.append(currChar), map);
+        }
+    }
+    public static int friendsPair(int n){
+        if(n==2 || n==1){
+            return n;
+        }
+        int single=friendsPair(n-1);
+        int pair=(n-1)*friendsPair(n-2);
+        int totalWays=single+pair;
+        return totalWays;
+    }
+    public static void binaryString(int n,int lastPlace,String str){
+        //Base Case
+        if(n==0){
+            System.out.println(str);
+            return ;
+        }
+        //kaam
+        if(lastPlace==0){
+            binaryString(n-1, 0, str+0);
+            binaryString(n-1, 1, str+1);
+        }
+        else{
+            binaryString(n-1, 0, str+0);
+        }
+    }
     public static void main (String args[]){
         // printN(1);
         // fun(10);
@@ -145,6 +186,9 @@ public class Basic_Recursion{
         // System.out.println(ls);
         // System.out.println(isPow(2, 5));
         // System.out.println(optiPow(2, 15));
-        System.out.println(tileProblem(5));
+        // System.out.println(tileProblem(5));
+        // duplicate("aapaanaacoolegwjwipps", 0, new StringBuilder(""),  new boolean [26]);
+        // System.out.println(friendsPair(4));
+        binaryString(5, 0, "");
     }
 }

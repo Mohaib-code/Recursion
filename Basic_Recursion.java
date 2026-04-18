@@ -170,25 +170,25 @@ public class Basic_Recursion{
         }
     }
     public static void main (String args[]){
-        // printN(1);
-        // fun(10);
-        // printInc(10);
-        // System.out.println(factorial(5));
-        // System.out.println(fact(5));
-        // System.out.println(sumNaturalNumber(5));
-        // System.out.println(fibo(5));
-        // int arr[]={1,2,4,3,4,5};
-        // System.out.println(isSorted(arr, 0));
-        // int arr2[]={2,34,3,2,5,3,4,5,5,5};
-        // firstOccurence(arr2, 0, 35);
-        // int arr3[]={2,3,4,5,6,7,5};
-        // int ls=lastOccurence(arr3, 5, 0);
-        // System.out.println(ls);
-        // System.out.println(isPow(2, 5));
-        // System.out.println(optiPow(2, 15));
-        // System.out.println(tileProblem(5));
-        // duplicate("aapaanaacoolegwjwipps", 0, new StringBuilder(""),  new boolean [26]);
-        // System.out.println(friendsPair(4));
+        printN(1);
+        fun(10);
+        printInc(10);
+        System.out.println(factorial(5));
+        System.out.println(fact(5));
+        System.out.println(sumNaturalNumber(5));
+        System.out.println(fibo(5));
+        int arr[]={1,2,4,3,4,5};
+        System.out.println(isSorted(arr, 0));
+        int arr2[]={2,34,3,2,5,3,4,5,5,5};
+        firstOccurence(arr2, 0, 35);
+        int arr3[]={2,3,4,5,6,7,5};
+        int ls=lastOccurence(arr3, 5, 0);
+        System.out.println(ls);
+        System.out.println(isPow(2, 5));
+        System.out.println(optiPow(2, 15));
+        System.out.println(tileProblem(5));
+        duplicate("aapaanaacoolegwjwipps", 0, new StringBuilder(""),  new boolean [26]);
+        System.out.println(friendsPair(4));
         binaryString(5, 0, "");
     }
 }
